@@ -2,6 +2,8 @@
   background-color: var(--black);
   min-height: 100vh;
   display: flex;
+  flex-direction: column;
+  gap: 32px;
   align-items: center;
   justify-content: center;
 }

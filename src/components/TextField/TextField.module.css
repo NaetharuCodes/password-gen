@@ -1,0 +1,43 @@
+.container {
+  background-color: var(--blue-dark);
+  width: 540px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 32px;
+}
+
+.text {
+  font-size: 32px;
+  color: var(--white);
+  opacity: 25%;
+}
+
+.textFilled {
+  font-size: 32px;
+  color: var(--white);
+  opacity: 100%;
+}
+
+.buttonContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+.button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.notCopied {
+  color: var(--blue-dark);
+}
+
+.copied {
+  color: var(--green);
+}
