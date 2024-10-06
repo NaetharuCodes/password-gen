@@ -1,0 +1,16 @@
+.button {
+  display: flex;
+  padding: 21px 177px;
+  border: 2px solid var(--green);
+  background-color: var(--green);
+  color: var(--black);
+  gap: 24px;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+}
+
+.button:hover {
+  background-color: var(--black);
+  color: var(--green);
+}

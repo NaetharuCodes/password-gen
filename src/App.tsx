@@ -1,11 +1,12 @@
-import './App.css'
+import Button from "./components/Button/Button";
+import styles from "./App.module.css";
 
 function App() {
-
-
   return (
-    <div>My app</div>
-  )
+    <div className={styles.container}>
+      <Button text="Press Me" />
+    </div>
+  );
 }
 
-export default App
+export default App;
