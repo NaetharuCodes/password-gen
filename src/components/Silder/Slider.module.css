@@ -1,0 +1,52 @@
+.container {
+  width: 540px;
+  background-color: var(--blue-dark);
+  padding: 24px 32px 32px 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.sliderBar {
+  height: 8px;
+  background-color: var(--black);
+  position: relative;
+}
+
+.sliderCircle {
+  width: 28px;
+  height: 28px;
+  background-color: var(--white);
+  border-radius: 100%;
+  position: absolute;
+  top: -125%;
+}
+
+.sliderCircle:hover {
+  background-color: var(--black);
+  border: 2px solid var(--green);
+}
+
+.greenTrack {
+  height: 8px;
+  background-color: var(--green);
+  position: relative;
+}
+
+.infoContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  height: 43px;
+}
+
+.labelText {
+  color: var(--white);
+  font-size: 18px;
+}
+
+.numberText {
+  color: var(--green);
+  font-size: 32px;
+}

@@ -1,0 +1,19 @@
+.container {
+  display: flex;
+  gap: 28px;
+  color: var(--white);
+  cursor: pointer;
+}
+
+.box {
+  border: 2px solid var(--white);
+  width: 20px;
+  height: 20px;
+}
+
+.boxChecked {
+  border: 2px solid var(--green);
+  background-color: var(--green);
+  width: 20px;
+  height: 20px;
+}
