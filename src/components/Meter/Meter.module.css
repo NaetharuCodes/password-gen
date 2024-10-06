@@ -1,0 +1,54 @@
+.container {
+  background-color: var(--blue-dark);
+  height: 72px;
+  width: 476px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 32px;
+}
+
+.labelText {
+  color: var(--blue-light);
+}
+
+.mainText {
+  color: var(--white);
+  font-size: 24px;
+  margin-right: 8px;
+}
+
+.meterBarContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+}
+
+.meterBar {
+  height: 28px;
+  width: 10px;
+  border: 2px solid var(--white);
+}
+
+/* STRENGTH STYLES */
+
+.tooWeak {
+  border: 2px solid var(--red);
+  background-color: var(--red);
+}
+
+.weak {
+  border: 2px solid var(--orange);
+  background-color: var(--orange);
+}
+
+.medium {
+  border: 2px solid var(--yellow);
+  background-color: var(--yellow);
+}
+
+.strong {
+  border: 2px solid var(--green);
+  background-color: var(--green);
+}

@@ -11,6 +11,6 @@
 }
 
 .button:hover {
-  background-color: var(--black);
+  background-color: var(--blue-dark);
   color: var(--green);
 }
