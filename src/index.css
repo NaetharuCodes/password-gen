@@ -34,3 +34,14 @@
   font-size: 18px;
   line-height: 23px;
 }
+
+.full-h {
+  min-height: 100vh;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
