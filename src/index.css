@@ -2,8 +2,35 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "JetBrains Mono", monospace;
+  font-weight: bold;
 }
 
 :root {
-  --
+  /* NEUTRAL COLORS */
+  --blue-dark: #24232c;
+  --blue-light: #817d92;
+  --white: #e6e5ea;
+  --black: #18171f;
+
+  /* MAIN COLORS */
+  --green: #a4ffaf;
+  --red: #f64a4a;
+  --orange: #fb7c58;
+  --yellow: #f8cd65;
+}
+
+.heading-l {
+  font-size: 32px;
+  line-height: 43px;
+}
+
+.heading-m {
+  font-size: 24px;
+  line-height: 31px;
+}
+
+.main-text {
+  font-size: 18px;
+  line-height: 23px;
 }
