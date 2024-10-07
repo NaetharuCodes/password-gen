@@ -1,6 +1,5 @@
 .container {
   background-color: var(--blue-dark);
-  width: 540px;
   height: 80px;
   display: flex;
   align-items: center;

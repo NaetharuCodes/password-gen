@@ -4,14 +4,20 @@ interface TextFieldProps {
   text?: string;
   isCopied: boolean;
   setCopied: (value: boolean) => void;
+  additionalStyle?: React.CSSProperties;
 }
 
-const TextField = ({ text, isCopied, setCopied }: TextFieldProps) => {
+const TextField = ({
+  text,
+  isCopied,
+  setCopied,
+  additionalStyle,
+}: TextFieldProps) => {
   const defaultColor = "#e6e5ea";
   const copiedColor = "#a4ffaf";
 
   return (
-    <div className={styles.container}>
+    <div className={styles.container} style={additionalStyle}>
       <span className={text ? styles.textFilled : styles.text}>
         {text ? text : "P4$5W0rD!"}
       </span>

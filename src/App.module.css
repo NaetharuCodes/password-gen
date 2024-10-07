@@ -7,3 +7,32 @@
   align-items: center;
   justify-content: center;
 }
+
+.innerContainer {
+  width: 540px;
+}
+
+.brand {
+  margin-bottom: 32px;
+  font-size: 24px;
+  color: var(--blue-light);
+  text-align: center;
+}
+
+.checkboxContainer {
+  background-color: var(--blue-dark);
+  padding: 24px 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.meterContainer {
+  background-color: var(--blue-dark);
+  padding: 0 32px;
+}
+
+.buttonContainer {
+  background-color: var(--blue-dark);
+  padding: 24px 32px;
+}

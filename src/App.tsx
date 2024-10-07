@@ -9,14 +9,63 @@ import Checkbox from "./components/Checkbox/Checkbox";
 
 function App() {
   const [copied, setCopied] = useState(false);
+  const [options, setOptions] = useState({
+    upper: true,
+    lower: true,
+    number: false,
+    symbol: false,
+  });
+
+  const handleUpdateOptions = (option: keyof typeof options) => {
+    setOptions((prevOptions) => ({
+      ...prevOptions,
+      [option]: !prevOptions[option],
+    }));
+  };
 
   return (
     <div className={styles.container}>
-      <TextField text={"Something"} isCopied={copied} setCopied={setCopied} />
-      <Button text="Press Me" />
-      <Meter strength={Strength.Strong} />
-      <Slider min={8} max={16} onChange={() => {}} />
-      <Checkbox checked={false} text="More buttons" />
+      <div className={styles.innerContainer}>
+        <div className={styles.brand}>Password Generator</div>
+        <TextField
+          isCopied={copied}
+          setCopied={setCopied}
+          additionalStyle={{ marginBottom: 24 }}
+        />
+        <Slider min={8} max={16} onChange={() => {}} />
+        <div className={styles.checkboxContainer}>
+          <Checkbox
+            checked={options.upper}
+            text="Include Uppercase Letters"
+            value="upper"
+            onClick={handleUpdateOptions}
+          />
+          <Checkbox
+            checked={options.lower}
+            text="Include Lowercase Letters"
+            value="lower"
+            onClick={handleUpdateOptions}
+          />
+          <Checkbox
+            checked={options.number}
+            text="Include Numbers"
+            value="number"
+            onClick={handleUpdateOptions}
+          />
+          <Checkbox
+            checked={options.symbol}
+            text="Include Symbols"
+            value="symbol"
+            onClick={handleUpdateOptions}
+          />
+        </div>
+        <div className={styles.meterContainer}>
+          <Meter strength={Strength.Medium} />
+        </div>
+        <div className={styles.buttonContainer}>
+          <Button text="Generate" />
+        </div>
+      </div>
     </div>
   );
 }
